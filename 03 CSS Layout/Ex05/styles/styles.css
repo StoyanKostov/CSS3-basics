@@ -1,0 +1,70 @@
+body, header, section, ul, li, article, button, a { 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #000;
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #ffffff;
+}
+
+#wrapper {
+	margin: 5px auto;
+	width: 689px;
+	border: 1px solid #000;
+}
+
+nav {
+	text-align:center;
+}
+
+	nav ul {
+		list-style-type: none;
+	}
+
+		nav ul li {
+			display:inline;
+		}
+
+aside {
+	width: 146px;
+	padding: 45px 25px 0 0;
+	float: right;
+}
+
+#content-entry {
+	margin: 10px 197px 10px 10px;
+	padding-bottom: 20px;
+	border: 1px solid #000;
+}
+
+	#content-entry>section {
+		padding: 20px 0 0 20px;
+		display: inline-block;
+		width: 208px;
+	}
+
+		#content-entry>section>fieldset {
+			height: 90px;
+			position: relative;
+		}
+
+			#content-entry>section>fieldset>.left-side {
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+			}
+			
+				#content-entry>section>fieldset>.left-side img {
+					width: 77px;
+					height: 100%;
+				}
+
+			#content-entry>section>fieldset>.right-side {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+			}
+

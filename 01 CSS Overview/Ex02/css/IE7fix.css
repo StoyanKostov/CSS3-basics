@@ -1,0 +1,5 @@
+/*IE7 border-spacing fix*/
+#person-list {
+	border-collapse: separate;
+	*border-collapse: expression('separate', cellSpacing = '0px');
+}

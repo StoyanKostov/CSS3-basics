@@ -1,0 +1,63 @@
+html, body, header, section, article, footer, nav, ul, li, a, h1, p { 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Georgia, serif;
+	color: #000000;
+	font-size: 62.5%;  /* 10px = 1em */ 
+	background-color: #a9a9a9;
+}
+
+h1 {
+	color: #fafad2;
+	font-size: 3.2em;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+body>header, body>footer
+{
+	text-align: center;
+}
+
+body>header>h1
+{
+	margin-bottom: 1.56em;
+}
+
+header>nav>ul>li {
+	margin: 0.2em 0;
+	font-size: 1.7em;
+	list-style: none;
+}
+
+	header>nav>ul>li>a {
+		color: #ffffff;
+	}
+
+	header>nav>ul>li>a.current {
+		background-color: #d3d3d3;
+	}
+
+article>header>h1 {
+	margin: 2.2em 0;
+	font-size: 2.2em;
+}	
+
+article>p {
+	font-size: 1.2em;
+}
+
+article>footer {
+	margin-top: 3.2em;
+	font-size: 1em;
+}
+
+body>footer {
+	font-size: 1.2em;
+}

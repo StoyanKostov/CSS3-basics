@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Person List</title>
+		<link type="text/css" rel="stylesheet" href="css/styles.css"  />
+		<!--[if lte IE 7]>
+			<link type="text/css" rel="stylesheet" href="css/IE7fix.css"  />
+			<noscript>
+				 <strong>Warning !</strong>
+				 Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+			</noscript>
+		<![endif]-->
+    </head>
+    <body>
+		<table id="person-list">
+			<thead>
+				<tr>
+					<th>Contact name</th>
+					<th>City</th>
+					<th>Country</th>
+					<th>Is Promoted</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Maria Anders</td>
+					<td>Berlin</td>
+					<td class="flags germany">Germany</td>
+					<td><input type="checkbox" name="Discounted"></td>
+				</tr>
+				<tr class="even">
+					<td>Ana Trujillo</td>
+					<td>Mexico D.F.</td>
+					<td class="flags mexico">Mexico</td>
+					<td><input type="checkbox" name="Discounted"></td>
+				</tr>
+				<tr>
+					<td>Antonio Moreno</td>
+					<td>Mexico D.F.</td>
+					<td class="flags mexico">Mexico</td>
+					<td><input type="checkbox" checked name="Discounted"></td>
+				</tr>
+				<tr class="even">
+					<td>Thomas Hardy</td>
+					<td>London</td>
+					<td class="flags uk">UK</td>
+					<td><input type="checkbox" value="" name="Discounted"></td>
+				</tr>
+			</tbody>
+		</table>
+    </body>
+</html>

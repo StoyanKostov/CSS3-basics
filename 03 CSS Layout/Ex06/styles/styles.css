@@ -1,0 +1,82 @@
+body, header, section, h1, ul, li, article, button, video, a { 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #1e3741;
+	color: #a5afb3;
+	font-size: 12px;
+	font-family: sans-serif;
+	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#wrapper {
+	margin: 0px auto;
+	width: 691px;
+}
+
+header#main {
+	padding: 13px;
+}
+
+	#main-nav ul li {
+		padding: 13px;
+		color: #93acb6;
+		background-color: #4b5f67;
+		text-align: center;
+		display: inline-block;
+		/*IE7 inline-block fix*/
+		zoom: 1;
+		*display: inline;
+	}
+	
+	#main-nav ul li.current {
+		font-weight: normal;
+		font-size: 12px;
+		padding: 13px;
+		padding-left: 0;
+		background-color: transparent;
+	}
+	
+		#main-nav ul li a {
+			color: #93acb6;
+			text-decoration: none;
+		}
+		
+		#main-nav ul li.current a {
+			color: #ffffff;
+		}
+		
+		#main-nav ul li a:hover {
+			text-decoration: underline;
+		}
+
+
+section {
+	width: 265px;
+	float: left;
+}
+
+	section h1 {
+		padding: 13px;
+		display: block;
+		width: 100%;
+		color: #ffffff;
+		font-size: 13px;
+		font-weight: normal;
+		background: #00968c;
+	}
+
+	section ul li {
+		padding: 13px;
+		border-top: 1px solid #3a4f58;
+	}
+
+	section ul li:first-child {
+		border-top: 0px none;
+	}

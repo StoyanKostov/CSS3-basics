@@ -1,0 +1,211 @@
+.clearfix{
+  zoom:1;
+
+  &:after{
+    display:block; content:"";
+    height:0; clear:both; } 
+}
+
+@mixin linear-gradient ($start_color, $end_color, $pos_start, $pos_end) {	
+	background: -moz-linear-gradient(top, $start_color $pos_start, rgba(0,158,195,1) $pos_end); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($pos_start, $start_color), color-stop($pos_end, $end_color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, $start_color $pos_start, $end_color $pos_end); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, $start_color $pos_start, $end_color $pos_end); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, $start_color $pos_start, $end_color $pos_end); /* IE10+ */
+	background: linear-gradient(to bottom, $start_color $pos_start, $end_color $pos_end); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$start_color}', endColorstr='{$end_color}',GradientType=0 ); /* IE6-8 */
+}
+
+@mixin borderRadius($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+
+$bodyFontFamily: Arial, sans-serif;
+$bodyFontSize: 14px;
+$background_color: #960fff;
+$textColor: white;
+$body_startColor: #e3c0ff;
+$body_endColor: #960fff;
+$body_pos_colorStart: 0%;
+$body_pos_colorEnd: 22%;
+
+
+html, body, header, section, aside, footer, article, h1, h2, input, form, button, label, p, nav, ul, li, a, span, strong, em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+    border: none
+}
+
+body {
+	color: $textColor;
+	font-size: $bodyFontSize;
+	font-family: $bodyFontFamily;
+	background: $background_color;
+
+	header {
+		@extend .clearfix;
+		padding: 20px;
+		
+		div#logo-container {
+			float: left;
+		}
+
+		div#reg-form-container {
+			float: right;
+
+			div {
+				text-align: right;
+			}
+
+			label {
+				width: 50px;
+			}
+
+			input {
+				width: 130px;
+				border: 1px solid #603382;
+				border-radius: 10px;
+				padding: 2px 5px;
+				margin: 5px;
+				background-color : #c57ffb;
+			}
+
+			button {
+				margin-left: auto;
+				margin-right: auto;
+				font-weight: bold;
+				border: 1px solid #603382;
+				border-style: outset;
+				@include borderRadius(10px);
+				padding: 5px 8px;
+				background-color: #bb64ff;
+				color: white;
+			}
+
+			button:hover {
+				background-color: #8949b9;
+				border-style: inset;
+		    }
+		}
+
+		nav {
+			padding-top: 20px;
+			clear: both;
+			
+			ul#main-nav-list {
+				padding: 10px;
+				border: 1px  solid #000000;
+				@include borderRadius(15px);
+				@extend .clearfix;
+
+				>li {
+					float: left;
+
+					a {
+						text-decoration: none;
+						padding: 0 10px 0 10px;
+						color: white;
+						font: 1.4em normal Arial;
+					}
+
+					ul {
+						display: none;
+					}
+
+					&:hover ul {
+						display: block;
+					}
+				}
+			}
+
+		}
+	}
+
+	section {
+		padding: 20px;
+		width: 75%;
+		float: left;
+		@extend .clearfix;
+
+		article {
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid #000000;
+			@include borderRadius(15px);
+			header h1 {
+				font-size: 15px;
+			}
+			footer {
+				text-align: right;
+			}
+		}
+	}
+	aside {
+		margin-left: 78%;
+		margin-right: 20px;
+
+		> ul {
+
+			> li {
+				margin: 15px 0;
+				padding: 15px;
+				border: 1px solid black;
+				@include borderRadius(5px);
+
+				h2 {
+					font-size: 1.1em;
+					font-weight: bold;
+				}
+
+				p {
+					margin: 10px 5px 10px 5px;
+					font-size: 14px;
+
+					a {
+						color: #aaaaaa;
+						text-decoration: none;
+					}
+
+					strong {
+						color: #cccccc;
+						font-weight: bold;
+						font-style: normal;
+					}
+
+				em {
+					color: #cccccc;
+					font-weight: normal;
+					font-style: italic;
+				}
+			}
+
+				ul {	
+					margin-top: 10px 0 10px;
+
+					li {
+						margin: 5px 10px 0 0 ;
+						background: transparent url('../images/li-dot.png') no-repeat left 5px;
+						padding-left: 25px;
+					}
+				}
+			}
+		}
+	}
+
+	>footer {
+		font-weight: bold;
+		text-align: center;
+		clear: both;
+	}
+}
+

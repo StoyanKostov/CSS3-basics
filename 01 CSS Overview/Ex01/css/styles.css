@@ -1,0 +1,66 @@
+html, body, section, h1, p, ul, li, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	color: #bbbbbb;
+	font-size: 62.5%;  /* 10px = 1em */ 
+	background-color: #000000;
+}
+
+a {
+	text-decoration: none;
+	color: #fff2b2;
+}
+
+
+#ticket {
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 0.8em;
+	padding-left: 0.3em;
+	width: 30.6em;
+	background-color: #595959;
+}
+
+	h1 {
+		font-size: 2em;
+		font-weight: normal;
+	}
+	
+	dt {
+		margin-top: 1.8em;
+		width: 12.8em;
+		font-style: italic;
+		color: #ffffff;
+	}
+	
+	dt + dd {
+		margin-top: -1.2em;
+	}
+	
+	dd {
+		margin-left: 16em;
+	}
+
+dd.bullet {
+	padding-left: 2em;
+	height: 1.5em;
+	background-image: url("../images/bullet.png");
+	background-position: 0px;
+	background-repeat: no-repeat;
+}
+
+dd.font-yellow {
+	color: #fff2b2;
+}
+
+dd.font-red {
+	color: #ff0014;
+}
+
+dd.font-orange {
+	color: #e06b2a;
+}

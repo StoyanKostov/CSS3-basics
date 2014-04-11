@@ -1,0 +1,64 @@
+html, body, table, thead, tbody, tr, th, td { 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	color: #bbbbbb;
+	font-size: 62.5%;  /* 10px = 1em */ 
+	background-color: #000000;
+}
+
+#person-list {
+	margin: 0 auto;
+	color: #000000;
+	border-bottom: 1px solid #bbb99d;
+	border-collapse: separate;
+	border-spacing: 0;
+	background-color: #ffffff;
+}
+
+	td, th {
+		padding: 0 2em 0 2em;
+		height: 2.3em;
+	}
+
+	th {
+		color: #ffffff;
+		font-weight: normal;
+		background-image: url("../images/bgheader.jpg");
+		border-top: 1px solid #72c530;
+		border-right: 1px solid #72c530;
+		border-bottom: 1px solid #27710a;
+		border-left: 1px solid #27710a;
+	}
+
+	td {
+		border-left: 1px solid #bbb99d;
+	}
+
+	td:first-child {
+		border-left: 0;
+	}
+
+.even {
+	background-color: #ececd8;
+}
+
+.flags {
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 4px
+}
+
+.germany {
+	background-image: url("../images/germany.jpg");
+}
+
+.mexico {
+	background-image: url("../images/mexico.jpg");
+}
+.uk {
+	background-image: url("../images/uk.jpg");
+}

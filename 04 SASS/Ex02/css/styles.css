@@ -1,0 +1,129 @@
+.clearfix, body header, body header nav ul#main-nav-list, body section {
+  zoom: 1; }
+  .clearfix:after, body header:after, body header nav ul#main-nav-list:after, body section:after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both; }
+
+html, body, header, section, aside, footer, article, h1, h2, input, form, button, label, p, nav, ul, li, a, span, strong, em {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+ul {
+  list-style-type: none; }
+
+img {
+  border: none; }
+
+body {
+  color: white;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  background: #960fff; }
+  body header {
+    padding: 20px; }
+    body header div#logo-container {
+      float: left; }
+    body header div#reg-form-container {
+      float: right; }
+      body header div#reg-form-container div {
+        text-align: right; }
+      body header div#reg-form-container label {
+        width: 50px; }
+      body header div#reg-form-container input {
+        width: 130px;
+        border: 1px solid #603382;
+        border-radius: 10px;
+        padding: 2px 5px;
+        margin: 5px;
+        background-color: #c57ffb; }
+      body header div#reg-form-container button {
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        border: 1px solid #603382;
+        border-style: outset;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        padding: 5px 8px;
+        background-color: #bb64ff;
+        color: white; }
+      body header div#reg-form-container button:hover {
+        background-color: #8949b9;
+        border-style: inset; }
+    body header nav {
+      padding-top: 20px;
+      clear: both; }
+      body header nav ul#main-nav-list {
+        padding: 10px;
+        border: 1px solid #000000;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px; }
+        body header nav ul#main-nav-list > li {
+          float: left; }
+          body header nav ul#main-nav-list > li a {
+            text-decoration: none;
+            padding: 0 10px 0 10px;
+            color: white;
+            font: 1.4em normal Arial; }
+          body header nav ul#main-nav-list > li ul {
+            display: none; }
+          body header nav ul#main-nav-list > li:hover ul {
+            display: block; }
+  body section {
+    padding: 20px;
+    width: 75%;
+    float: left; }
+    body section article {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #000000;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px; }
+      body section article header h1 {
+        font-size: 15px; }
+      body section article footer {
+        text-align: right; }
+  body aside {
+    margin-left: 78%;
+    margin-right: 20px; }
+    body aside > ul > li {
+      margin: 15px 0;
+      padding: 15px;
+      border: 1px solid black;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+      body aside > ul > li h2 {
+        font-size: 1.1em;
+        font-weight: bold; }
+      body aside > ul > li p {
+        margin: 10px 5px 10px 5px;
+        font-size: 14px; }
+        body aside > ul > li p a {
+          color: #aaaaaa;
+          text-decoration: none; }
+        body aside > ul > li p strong {
+          color: #cccccc;
+          font-weight: bold;
+          font-style: normal; }
+        body aside > ul > li p em {
+          color: #cccccc;
+          font-weight: normal;
+          font-style: italic; }
+      body aside > ul > li ul {
+        margin-top: 10px 0 10px; }
+        body aside > ul > li ul li {
+          margin: 5px 10px 0 0;
+          background: transparent url("../images/li-dot.png") no-repeat left 5px;
+          padding-left: 25px; }
+  body > footer {
+    font-weight: bold;
+    text-align: center;
+    clear: both; }
+
